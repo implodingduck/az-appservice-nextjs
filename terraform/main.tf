@@ -77,8 +77,6 @@ resource "azurerm_linux_web_app" "example" {
   }
 
   app_settings = {
-    "SCM_DO_BUILD_DURING_DEPLOYMENT"           = "1"
-    "BUILD_FLAGS"                              = "UseExpressBuild"
-    "ENABLE_ORYX_BUILD"                        = "true"
+
   }
 }
