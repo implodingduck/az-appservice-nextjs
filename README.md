@@ -1,7 +1,3 @@
-# base-repo
-Please setup the following secrets:
+# az-appservice-nextjs
 
-* AZURE_CLIENT_ID
-* AZURE_SUBSCRIPTION_ID
-* AZURE_TENANT_ID
-* KV_NAME
+* Build and deploy Next.js app into Azure App Service
