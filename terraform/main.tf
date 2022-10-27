@@ -75,4 +75,10 @@ resource "azurerm_linux_web_app" "example" {
       node_version = "16-lts"
     }
   }
+
+  app_settings = {
+    "SCM_DO_BUILD_DURING_DEPLOYMENT"           = "1"
+    "BUILD_FLAGS"                              = "UseExpressBuild"
+    "ENABLE_ORYX_BUILD"                        = "true"
+  }
 }

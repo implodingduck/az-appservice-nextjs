@@ -110,7 +110,7 @@ jobs:
           rm -rf node_modules
 
 
-      - name: 'Run Azure webapp deploy action using publish profile credentials'
+      - name: 'Run Azure webapp deploy action using Azure Login'
         uses: azure/webapps-deploy@v2
         with: 
           app-name: nextjsdtoiii3j
