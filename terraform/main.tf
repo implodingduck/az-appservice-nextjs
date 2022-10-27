@@ -69,10 +69,9 @@ resource "azurerm_linux_web_app" "example" {
   location            = azurerm_service_plan.asp.location
   service_plan_id     = azurerm_service_plan.asp.id
 
-  application_stack {
-    node_version = "16-lts"
-  }
   site_config {
-
+    application_stack {
+      node_version = "16-lts"
+    }
   }
 }
