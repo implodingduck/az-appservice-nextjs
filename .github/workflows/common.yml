@@ -97,13 +97,17 @@ jobs:
       - name: npm build
         run: |
           cd mynextapp
+          npm install
           npm run build
 
       - name: copy out standalone
         run: |
           mkdir ./build
-          cp -r mynextapp/.next/standalone ./build
-          cp -r mynextapp/.next/static ./build/.next/static
+          cp -r mynextapp/.next/standalone/ ./build
+          cp -r mynextapp/.next/static/ ./build/.next/static
+          cd ./build
+          ls -lta
+          rm -rf node_modules
 
 
       - name: 'Run Azure webapp deploy action using publish profile credentials'
